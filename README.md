@@ -1,4 +1,28 @@
-# Getting Started with Create React App
+# About this page
+
+This is a portfolio website for Robert Scibelli (me), deployed using github pages
+
+## How to view page
+
+Check this out: http://rscibelli.github.io/portfolio
+
+OR
+
+Go to the gh-pages branch and view the deploys
+
+## How it works
+
+I deployed it through github pages using this guide: https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
+
+You can deploy your new changes by running `npm run deploy`
+
+## Components
+
+I am using Material UI
+
+# Reacts Docs
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
