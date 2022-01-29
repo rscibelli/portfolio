@@ -83,7 +83,7 @@ export default function Home() {
 
   return (
     <div className={classes.root}>
-      <AppBar>
+      <AppBar position="static">
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon onClick={() => toggleDrawer()}/>
@@ -96,8 +96,6 @@ export default function Home() {
       <Drawer anchor={'left'} open={state.drawerOpen} onClose={() => toggleDrawer()}>
         {list()}
       </Drawer>
-
-      Robert Scibelli has lived an honorable life.
     </div>
   );
 }
