@@ -2744,7 +2744,7 @@
   "resolved" "https://repo.forge.lmig.com/api/npm/npm/async-limiter/-/async-limiter-1.0.1.tgz"
   "version" "1.0.1"
 
-"async@^2.6.2":
+"async@^2.6.1", "async@^2.6.2":
   "integrity" "sha512-zflvls11DCy+dQWzTW2dzuilv8Z5X/pjfmZOWba6TNIVDm+2UDaJmXSOXlasHKfNBs8oo3M0aT50fDEWfKZjXg== sha1-1yYl4jRKNlbjo61Pp0n6gymdgv8="
   "resolved" "https://repo.forge.lmig.com/api/npm/npm/async/-/async-2.6.3.tgz"
   "version" "2.6.3"
@@ -3659,6 +3659,11 @@
   "version" "1.0.8"
   dependencies:
     "delayed-stream" "~1.0.0"
+
+"commander@^2.18.0":
+  "integrity" "sha1-/UhehMA+tIgcIHIrpIA16FMa6zM="
+  "resolved" "https://repo.forge.lmig.com/api/npm/npm/commander/-/commander-2.20.3.tgz"
+  "version" "2.20.3"
 
 "commander@^2.20.0":
   "integrity" "sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ== sha1-/UhehMA+tIgcIHIrpIA16FMa6zM="
@@ -4628,6 +4633,11 @@
     "minimalistic-assert" "^1.0.0"
     "minimalistic-crypto-utils" "^1.0.0"
 
+"email-addresses@^3.0.1":
+  "integrity" "sha1-yr9+CFy9tjAIpwMZp05hNhiIEvs="
+  "resolved" "https://repo.forge.lmig.com/api/npm/npm/email-addresses/-/email-addresses-3.1.0.tgz"
+  "version" "3.1.0"
+
 "emittery@^0.7.1":
   "integrity" "sha512-A8OG5SR/ij3SsJdWDJdkkSYUjQdCUx6APQXem0SaEePBSRg4eymGYwBkKo1Y6DU+af/Jn2dBQqDBvjnr9Vi8nQ== sha1-JVlZCOE68PVnSrQZOW4vs5TN+oI="
   "resolved" "https://repo.forge.lmig.com/api/npm/npm/emittery/-/emittery-0.7.2.tgz"
@@ -4815,6 +4825,11 @@
   "integrity" "sha1-Aljq5NPQwJdN4cFpGI7wBR0dGYg="
   "resolved" "https://repo.forge.lmig.com/api/npm/npm/escape-html/-/escape-html-1.0.3.tgz"
   "version" "1.0.3"
+
+"escape-string-regexp@^1.0.2":
+  "integrity" "sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ="
+  "resolved" "https://repo.forge.lmig.com/api/npm/npm/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz"
+  "version" "1.0.5"
 
 "escape-string-regexp@^1.0.5":
   "integrity" "sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ="
@@ -5359,6 +5374,20 @@
     "loader-utils" "^2.0.0"
     "schema-utils" "^3.0.0"
 
+"filename-reserved-regex@^2.0.0":
+  "integrity" "sha1-q/c9+rc10EVECr/qLZHzieu/oik="
+  "resolved" "https://repo.forge.lmig.com/api/npm/npm/filename-reserved-regex/-/filename-reserved-regex-2.0.0.tgz"
+  "version" "2.0.0"
+
+"filenamify@^4.3.0":
+  "integrity" "sha1-YjkctY8CsJlxydT51js8+augMQY="
+  "resolved" "https://repo.forge.lmig.com/api/npm/npm/filenamify/-/filenamify-4.3.0.tgz"
+  "version" "4.3.0"
+  dependencies:
+    "filename-reserved-regex" "^2.0.0"
+    "strip-outer" "^1.0.1"
+    "trim-repeated" "^1.0.0"
+
 "filesize@6.1.0":
   "integrity" "sha512-LpCHtPQ3sFx67z+uh2HnSyWSLLu5Jxo21795uRDuar/EOuYWXib5EmPaGIBuSnRqH2IODiKA2k5re/K9OnN/Yg== sha1-6Bvap4DiRR1xTXHA16TzI403rQA="
   "resolved" "https://repo.forge.lmig.com/api/npm/npm/filesize/-/filesize-6.1.0.tgz"
@@ -5404,9 +5433,9 @@
     "pkg-dir" "^3.0.0"
 
 "find-cache-dir@^3.3.1":
-  "integrity" "sha512-t2GDMt3oGC/v+BMwzmllWDuJF/xcDtE5j/fCGbqDD7OLuJkj0cfh1YSA5VKPvwMeLFLNDBkwOKZ2X85jGLVftQ== sha1-ibM/rUpGcNqpT4Vff74x1thP6IA="
-  "resolved" "https://repo.forge.lmig.com/api/npm/npm/find-cache-dir/-/find-cache-dir-3.3.1.tgz"
-  "version" "3.3.1"
+  "integrity" "sha1-swxbbv8HMHMa6pu9nb7L2AJW1ks="
+  "resolved" "https://repo.forge.lmig.com/api/npm/npm/find-cache-dir/-/find-cache-dir-3.3.2.tgz"
+  "version" "3.3.2"
   dependencies:
     "commondir" "^1.0.1"
     "make-dir" "^3.0.2"
@@ -5546,7 +5575,7 @@
     "universalify" "^0.1.0"
 
 "fs-extra@^8.1.0":
-  "integrity" "sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g== sha1-SdQ8RaiM2Wd2aMt74bRu/bjS4cA="
+  "integrity" "sha1-SdQ8RaiM2Wd2aMt74bRu/bjS4cA="
   "resolved" "https://repo.forge.lmig.com/api/npm/npm/fs-extra/-/fs-extra-8.1.0.tgz"
   "version" "8.1.0"
   dependencies:
@@ -5655,6 +5684,19 @@
   "version" "0.1.7"
   dependencies:
     "assert-plus" "^1.0.0"
+
+"gh-pages@^3.2.3":
+  "integrity" "sha1-iX5fFeER9Cr1fSHUMLg+XN8pRyw="
+  "resolved" "https://repo.forge.lmig.com/api/npm/npm/gh-pages/-/gh-pages-3.2.3.tgz"
+  "version" "3.2.3"
+  dependencies:
+    "async" "^2.6.1"
+    "commander" "^2.18.0"
+    "email-addresses" "^3.0.1"
+    "filenamify" "^4.3.0"
+    "find-cache-dir" "^3.3.1"
+    "fs-extra" "^8.1.0"
+    "globby" "^6.1.0"
 
 "glob-parent@^3.1.0":
   "integrity" "sha1-nmr2KZ2NO9K9QEMIMr0RPfkGxa4="
@@ -7535,9 +7577,9 @@
     "semver" "^6.0.0"
 
 "make-dir@^3.0.2":
-  "integrity" "sha512-rYKABKutXa6vXTXhoV18cBE7PaewPXHe/Bdq4v+ZLMhxbWApkFFplT0LcbMW+6BbjnQXzZ/sAvSE/JdguApG5w== sha1-BKGsvyIiHh1u9DVZ9D4FqQ27Q5I="
-  "resolved" "https://repo.forge.lmig.com/api/npm/npm/make-dir/-/make-dir-3.0.2.tgz"
-  "version" "3.0.2"
+  "integrity" "sha1-QV6WcEazp/HRhSd9hKpYIDcmoT8="
+  "resolved" "https://repo.forge.lmig.com/api/npm/npm/make-dir/-/make-dir-3.1.0.tgz"
+  "version" "3.1.0"
   dependencies:
     "semver" "^6.0.0"
 
@@ -8515,7 +8557,7 @@
     "find-up" "^3.0.0"
 
 "pkg-dir@^4.1.0":
-  "integrity" "sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ== sha1-8JkTPfft5CLoHR2ESCcO6z5CYfM="
+  "integrity" "sha1-8JkTPfft5CLoHR2ESCcO6z5CYfM="
   "resolved" "https://repo.forge.lmig.com/api/npm/npm/pkg-dir/-/pkg-dir-4.2.0.tgz"
   "version" "4.2.0"
   dependencies:
@@ -10362,7 +10404,7 @@
   "version" "5.7.1"
 
 "semver@^6.0.0":
-  "integrity" "sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw== sha1-7gpkyK9ejO6mdoexM3YeG+y9HT0="
+  "integrity" "sha1-7gpkyK9ejO6mdoexM3YeG+y9HT0="
   "resolved" "https://repo.forge.lmig.com/api/npm/npm/semver/-/semver-6.3.0.tgz"
   "version" "6.3.0"
 
@@ -11048,6 +11090,13 @@
   "resolved" "https://repo.forge.lmig.com/api/npm/npm/strip-json-comments/-/strip-json-comments-3.1.1.tgz"
   "version" "3.1.1"
 
+"strip-outer@^1.0.1":
+  "integrity" "sha1-sv0qv2YEudHmATBXGV34Nrip1jE="
+  "resolved" "https://repo.forge.lmig.com/api/npm/npm/strip-outer/-/strip-outer-1.0.1.tgz"
+  "version" "1.0.1"
+  dependencies:
+    "escape-string-regexp" "^1.0.2"
+
 "style-loader@1.3.0":
   "integrity" "sha512-V7TCORko8rs9rIqkSrlMfkqA63DfoGBBJmK1kKGCcSi+BWb4cqz0SRsnp4l6rU5iwOEd0/2ePv68SV22VXon4Q== sha1-gotKOzt+eqWEfOe66eh0USEUJJ4="
   "resolved" "https://repo.forge.lmig.com/api/npm/npm/style-loader/-/style-loader-1.3.0.tgz"
@@ -11358,6 +11407,13 @@
   dependencies:
     "punycode" "^2.1.1"
 
+"trim-repeated@^1.0.0":
+  "integrity" "sha1-42RqLqTokTEr9+rObPsFOAvAHCE="
+  "resolved" "https://repo.forge.lmig.com/api/npm/npm/trim-repeated/-/trim-repeated-1.0.0.tgz"
+  "version" "1.0.0"
+  dependencies:
+    "escape-string-regexp" "^1.0.2"
+
 "tryer@^1.0.1":
   "integrity" "sha512-c3zayb8/kWWpycWYg87P71E1S1ZL6b6IJxfb5fvsUgsf0S2MVGaDhDXXjDMpdCpfWXqptc+4mXwmiy1ypXqRAA== sha1-8shUBoALmw90yfdGW4HqrSQSUvg="
   "resolved" "https://repo.forge.lmig.com/api/npm/npm/tryer/-/tryer-1.0.1.tgz"
@@ -11546,7 +11602,7 @@
     "crypto-random-string" "^1.0.0"
 
 "universalify@^0.1.0":
-  "integrity" "sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg== sha1-tkb2m+OULavOzJ1mOcgNwQXvqmY="
+  "integrity" "sha1-tkb2m+OULavOzJ1mOcgNwQXvqmY="
   "resolved" "https://repo.forge.lmig.com/api/npm/npm/universalify/-/universalify-0.1.2.tgz"
   "version" "0.1.2"
 
