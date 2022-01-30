@@ -6,11 +6,16 @@ import { sendFeedback, getAllFeedback } from '../../services/APICalls.js';
 export default function Feedback() {
 
   const [state, setState] = React.useState({
-    feedbackMessage: 'noMessage'
+    feedbackMessage: 'noMessage',
+    feedback: 'No Feedback Yet!'
   });
 
   function handleChange(event) {
     setState({feedbackMessage: event.target.value});
+  }
+
+ function getFeedback() {
+    setState({feedback: getAllFeedback()})
   }
 
   return (
@@ -24,7 +29,8 @@ export default function Feedback() {
         onChange={handleChange}
       />
       <Button variant="outlined" onClick={() => sendFeedback(state.feedbackMessage)}>Submit</Button>
-      <h2>{state.feedbackMessage}</h2>
+      <Button variant="outlined" onClick={() => getFeedback()}>Get All Feedback</Button>
+      <h2>{state.feedback}</h2>
     </div>
   );
 }
