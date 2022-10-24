@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -15,6 +16,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import MailIcon from '@material-ui/icons/Mail';
 import ChatIcon from '@material-ui/icons/Chat';
 import CodeIcon from '@material-ui/icons/Code';
+import ListItemButton from '@mui/material/ListItemButton';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Home() {
+  const navigate = useNavigate()
 
   const [state, setState] = React.useState({
     drawerOpen: false 
@@ -38,40 +41,57 @@ export default function Home() {
     setState({drawerOpen: !state.drawerOpen});
   }
 
+  const onClickFeedback = () => {
+    console.log("hi")
+    navigate('/feedback');
+  }
+
+  const onClickHome = () => {
+    navigate('/portfolio')
+  }
+
   const list = () => (
     <div>
       <List>
 
-        <ListItem button>
-          <ListItemIcon>
-            <HomeIcon />
+        <ListItem>
+          <ListItemButton onClick={onClickHome}>
+            <ListItemIcon>
+              <HomeIcon />
+            </ListItemIcon>
             <ListItemText primary="Home" />
-          </ListItemIcon>
+          </ListItemButton>
         </ListItem>
 
       </List>
       <Divider />
       <List>
 
-        <ListItem button>
-          <ListItemIcon>
-            <MailIcon />
+        <ListItem>
+          <ListItemButton>
+            <ListItemIcon>
+              <MailIcon />
+            </ListItemIcon>
             <ListItemText primary="Email Me" />
-          </ListItemIcon>
+          </ListItemButton>
         </ListItem>
 
-        <ListItem button>
-          <ListItemIcon>
-            <ChatIcon />
+        <ListItem>
+          <ListItemButton onClick={onClickFeedback}>
+            <ListItemIcon>
+              <ChatIcon />
+            </ListItemIcon>
             <ListItemText primary="Leave Feedback" />
-          </ListItemIcon>
+          </ListItemButton>
         </ListItem>
 
-        <ListItem button onClick="https://github.com/rscibelli/portfolio/tree/main">
-          <ListItemIcon>
-            <CodeIcon />
+        <ListItem>
+          <ListItemButton>
+            <ListItemIcon>
+              <CodeIcon />
+            </ListItemIcon>
             <ListItemText primary="Source Code" />
-          </ListItemIcon>
+          </ListItemButton>
         </ListItem>
 
       </List>
@@ -86,14 +106,14 @@ export default function Home() {
       <AppBar position="static">
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon onClick={() => toggleDrawer()}/>
+            <MenuIcon onClick={toggleDrawer}/>
           </IconButton>
           <Typography variant="h6" className={classes.title}>
             Robert Scibelli's Portfolio
           </Typography>
         </Toolbar>
       </AppBar>
-      <Drawer anchor={'left'} open={state.drawerOpen} onClose={() => toggleDrawer()}>
+      <Drawer anchor={'left'} open={state.drawerOpen} onClose={toggleDrawer}>
         {list()}
       </Drawer>
     </div>
