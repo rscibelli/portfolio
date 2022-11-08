@@ -1,11 +1,18 @@
-import * as React from 'react';
+import React, { makeStyles, useState } from 'react';
 import TextField from '@mui/material/TextField';
 import { Button } from '@material-ui/core';
 import { sendFeedback, getAllFeedback } from '../../services/APICalls.js';
 
-export default function Feedback() {
+// const useStyles = makeStyles(() => ({
+//   feedbackBody: {
+//     textAlign: 'center'
+//   }
+// }));
 
-  const [state, setState] = React.useState({
+export default function Feedback() {
+  // const classes = useStyles();
+
+  const [state, setState] = useState({
     feedbackMessage: 'noMessage',
     feedback: 'No Feedback Yet!'
   });
@@ -19,7 +26,7 @@ export default function Feedback() {
   }
 
   return (
-    <div className="feedback">
+    <div style={{ textAlign: 'center', padding: '20px' }}>
       <TextField
         id="outlined-multiline-static"
         label="Multiline"

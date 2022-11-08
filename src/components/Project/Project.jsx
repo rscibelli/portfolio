@@ -1,8 +1,8 @@
-import * as React from 'react';
+import React from 'react';
 
-export default function() {
+export default function Project() {
 
     return (
-        <H1>Rob</H1>
+        <h1 style={{ textAlign: 'center' }}>Projects page</h1>
     )
 }
