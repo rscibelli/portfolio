@@ -7,7 +7,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import HomeIcon from '@material-ui/icons/Home';
-import MailIcon from '@material-ui/icons/Mail';
+// import MailIcon from '@material-ui/icons/Mail';
 import ChatIcon from '@material-ui/icons/Chat';
 import CodeIcon from '@material-ui/icons/Code';
 import SportsGolfIcon from '@mui/icons-material/SportsGolf';
@@ -30,6 +30,11 @@ export default function SideMenu({drawerOpen, toggleDrawer}) {
     const onClickProjects = () => {
       toggleDrawer()
       navigate('/projects')
+    }
+
+    const onClickGolf = () => {
+      toggleDrawer()
+      navigate('/golf')
     }
   
     const list = () => (
@@ -59,7 +64,7 @@ export default function SideMenu({drawerOpen, toggleDrawer}) {
           </ListItem>
   
           <ListItem>
-            <ListItemButton onClick={onClickProjects}>
+            <ListItemButton onClick={onClickGolf}>
               <ListItemIcon>
                 <SportsGolfIcon />
               </ListItemIcon>
@@ -67,14 +72,14 @@ export default function SideMenu({drawerOpen, toggleDrawer}) {
             </ListItemButton>
           </ListItem>
   
-          <ListItem>
+          {/* <ListItem>
             <ListItemButton>
               <ListItemIcon>
                 <MailIcon />
               </ListItemIcon>
               <ListItemText primary="Email Me" />
             </ListItemButton>
-          </ListItem>
+          </ListItem> */}
   
           <ListItem>
             <ListItemButton onClick={onClickFeedback}>
@@ -86,7 +91,7 @@ export default function SideMenu({drawerOpen, toggleDrawer}) {
           </ListItem>
   
           <ListItem>
-            <ListItemButton>
+            <ListItemButton LinkComponent to="https://github.com/rscibelli/portfolio" target="_blank" rel="noopener noreferrer">
               <ListItemIcon>
                 <CodeIcon />
               </ListItemIcon>

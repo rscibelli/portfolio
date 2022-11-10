@@ -5,19 +5,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Feedback from './components/Feedback/Feedback';
-import Project from './components/Project/Project';
+import Projects from './components/Projects/Projects';
 import Home from './components/Home/Home';
+import Golf from './components/Golf/Golf';
 
 ReactDOM.render(
   <BrowserRouter>
     <div>
       <App />
+      <div style={{ textAlign: 'center' }}>
       <Routes>
         <Route exact path="/feedback" element={<Feedback />}/>
         <Route exact path="/portfolio" element={<Home />}/>
-        <Route exact path="/projects" element={<Project />}/>
-        <Route exact path="*" element={<Project />}/>
+        <Route exact path="/projects" element={<Projects />}/>
+        <Route exact path="/golf" element={<Golf />}/>
+        <Route exact path="*" element={<Projects />}/>
       </Routes>
+      </div>
     </div>
   </BrowserRouter>,
   document.getElementById('root')
