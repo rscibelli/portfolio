@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes, HashRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -8,9 +8,10 @@ import Feedback from './components/Feedback/Feedback';
 import Projects from './components/Projects/Projects';
 import Home from './components/Home/Home';
 import Golf from './components/Golf/Golf';
+import Wedding from './components/Wedding/Wedding';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <div>
       <App />
       <div style={{ textAlign: 'center' }}>
@@ -19,11 +20,12 @@ ReactDOM.render(
         <Route exact path="/portfolio" element={<Home />}/>
         <Route exact path="/projects" element={<Projects />}/>
         <Route exact path="/golf" element={<Golf />}/>
+        <Route exact path="/scibelli-wedding" element={<Wedding />}/>
         <Route exact path="*" element={<Projects />}/>
       </Routes>
       </div>
     </div>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById('root')
 );
 

@@ -13,6 +13,7 @@ import CodeIcon from '@material-ui/icons/Code';
 import SportsGolfIcon from '@mui/icons-material/SportsGolf';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import ListItemButton from '@mui/material/ListItemButton';
+import CelebrationIcon from '@mui/icons-material/Celebration';
 
 export default function SideMenu({drawerOpen, toggleDrawer}) {
     const navigate = useNavigate()
@@ -35,6 +36,11 @@ export default function SideMenu({drawerOpen, toggleDrawer}) {
     const onClickGolf = () => {
       toggleDrawer()
       navigate('/golf')
+    }
+
+    const onClickWedding = () => {
+      toggleDrawer()
+      navigate('/scibelli-wedding')
     }
   
     const list = () => (
@@ -69,6 +75,15 @@ export default function SideMenu({drawerOpen, toggleDrawer}) {
                 <SportsGolfIcon />
               </ListItemIcon>
               <ListItemText primary="Golf" />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem>
+            <ListItemButton onClick={onClickWedding}>
+              <ListItemIcon>
+                <CelebrationIcon />
+              </ListItemIcon>
+              <ListItemText primary="Scibelli Wedding" />
             </ListItemButton>
           </ListItem>
   
