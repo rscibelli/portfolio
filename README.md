@@ -4,7 +4,7 @@ This is a portfolio website for Robert Scibelli (me), deployed using github page
 
 ## How to view page
 
-Check this out: http://rscibelli.github.io/portfolio
+Check this out: https://rscibelli.github.io/portfolio/#/portfolio
 
 OR
 
